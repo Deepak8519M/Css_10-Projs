@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+nav ul li {
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  color: #000;
+}
+
+nav ul li:hover {
+  background: #ccc;
+  transition: 0.3s ease-in-out;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+nav ul li a:visited {
+  color: black;
+}
+nav ul li a:hover {
+  color: blue;
+}
+nav ul li a:active {
+  color: red;
+}
+
+nav h1 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  border-bottom: 1px;
+  border: 1px solid #ccc;
+}
+
+body {
+  display: flex;
+}
+
+header {
+  border: 1px solid #ccc;
+  height: 100vh;
+}
+
+/* Main Section */
+
+/* intro section */
+
+main {
+  /* border: 1px solid red; */
+  padding: 50px;
+  max-width: 1200px;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+section article {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+section article ul {
+  margin-left: 30px;
+}
+section article ul li {
+  margin-bottom: 10px;
+}
+
+code {
+  white-space: pre-line;
+  line-height: 2;
+  background: #f7f7f7;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-class {
+  margin-top: 2.5rem;
+}
+
+.btn-class button {
+  padding: 10px 15px;
+  border: none;
+  background: rgb(255, 68, 0);
+  /* border: 1px solid red; */
+  /* transition: 0.5s ease-in-out; */
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  /* transition: 0.5s ease-in-out; */
+}
+
+button:hover {
+  border: 1px solid rgb(255, 68, 0);
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+button:hover a {
+  color: rgb(255, 68, 0);
+  /* transition: 0.5s ease-in-out; */
+}
+
+/* Responsiveness: */
+
+@media (max-width: 640px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  header {
+    height: 50%;
+
+    /* overflow-y: scroll; */
+  }
+
+  nav h1 {
+    text-align: center;
+  }
+
+  header ul li {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  header ul li a {
+    /* border: 1px solid blue; */
+  }
+}
